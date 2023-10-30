@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: beige;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        h1{
+            background-color: darkgrey;
+            padding: 20px;
+            text-align: center;
+        }
+        nav{
+           background-color: cornflowerblue; 
+           padding: 20px;
+           box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.525);
+        }
+        nav>a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        nav>a:hover{
+            text-decoration: underline;
+        }
+
+       #assuntos > section{
+            background-color: lightsteelblue;
+            
+        }
+    
+        #noticias{
+            background-color: lightsteelblue;
+            padding: 10px;
+        }
+        article > aside{
+            background-color: gray;
+            margin-top: 20px;
+        }
+
+        footer{
+            margin-top: 20px;
+            background-color: black;
+            text-align: center;
+            color: wheat;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </nav>
+    </header>
+    <main id="assuntos">
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus ut voluptatem facere sint delectus repellat nulla nostrum dicta! Voluptas consectetur magnam numquam. Eveniet non ullam possimus illo sed labore facere.
+            </p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias Relevantes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat dolorum voluptatum sequi, aliquid asperiores, doloribus doloremque nobis perferendis eaque dolor quaerat. Natus officia atque eius. Rem dignissimos nobis ipsum reiciendis.</p>
+                <aside>
+                <p>Artigo escrito por Fulano José.</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por CarmemLima</p>
+    </footer>
+    
+
+    
+</body>
+</html>

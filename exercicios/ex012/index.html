@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <H1>Inserindo vídeos hospedados localmente (no próprio servidor)</H1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midias/video-convertido.mp4.mp4" width="300" controls></video>
+    <p>Para inserirmos vários formatos de arquivo, usamos a tag video sem src. A visualização não vai ser alterada, mas o código sim.</p>
+    <video controls poster="imagens/capa-video-ex012.png" width="300" autoplay>
+        <source src="midias/video-original.mp4.mp4" type="vide/original.mp4">
+        <source src="midias/video-convertido.mp4.mp4" type="video/convertido.mp4">
+        <source src="midias/video.webM.webm" type="video/webm">
+        <source src="midias/video.ogv.ogv" type="vide/ogv">
+        <p>Seu navegador não é capaz de reproduzir este arquivo.</p>
+    </video>
+    <p>OBS: A capa foi criada por mim, no entanto foi criada com largura diferente da do vídeo. É recomendado criar a capa de acordo com a resolução do vídeo.</p>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Pegando vídeo do YouTube para compartilhar no seu site. Essa é uma alternativa para não consumir dados do seu pacote de hospedagem.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=eGCRxPWRfen9wGE1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark{background-color: coral;}
+    </style>
+</head>
+<body>
+   <h1>Principais formatações</h1> 
+   <h2>Negrito/Destaque</h2>
+   <p>Nesta frase, temos um <b>termo em negrito </b>usando a tag B (não semantica)</p>
+   <p>Nesta frase, temos um <strong>termo em destaque</strong>usando a tag STRONG (com semantica/sentido)</p>
+   <h2>Itálico/Ênfase</h1>
+   <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semantica).</p>
+   <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (com semantica/sentido).</p>
+   <h2>Texto marcado</h2>
+   <p>Para usar um texto com estilo marcador de texto, podemos usar a tag MARK como na frase a seguir: <mark>texto marcado</mark></p>
+   <p>No entanto, a tag MARK sempre deixará com a cor padrão amarela. Para alterar a cor do marcador de texto usamos uma tag do CSS dentro da tag MARK. Incluimos a tag STYLE, e entre as aspas incluimos a tag BACKGROUND COLOR  e daí escolhemos a cor desejada. Veja o exemplo nesta frase: <mark style="background-color: blueviolet;">texto marcado</mark></p>
+   <p>Se dentro da página houver vários textos ou frases com marcador de texto, recomenda-se usar uma tag generalizada para fazer a alteração automatica em todas. A tag de estilo (do CSS) fica abaixo de TITLE usando um seletor: adiciona a tag STYLE, dentro dela adiciona a tag MARK com o seletor {}. Por exemplo: texto marcado <mark>aqui</mark> e <mark>aqui</mark> e <mark>aqui</mark>. OBS: as palavras TEXTO MARCADO digitada no primeiro paragrafo deste tópico, também ficou com a cor alterada, pois ao alterar de forma generalizada o sistema irá alterar todas aquelas palavras ou frases que tiverem com a cor padrão amarela.</p> 
+   <h2>Texto grande e pequeno</h2>
+   <p>usamos a tag BIG para usar palavras ou textos com fontes maiores, no entanto esta tag está obsoleta e por isso fica vermelha. Exemplo: <big>texto grande</big></p>
+   <p>Para usar palavras ou texto com fontes menores usamos a tag SMALL. Exemplo: <small>texto pequeno</small>.</p>
+   <h2>Texto deletado (tachado)</h2>
+   <p>Para usarmos um texto com uma linha ao meio da frase indicando texto deletado, usamos a tag DEL. Exemplo: <del>desconsidere esse texto</del></p>
+   <h2>Texto inserido (sublinhado)</h2>
+   <p>Para texto sublinhado usamos a tag U (não semântica) ou a tag INS (forma semântica). Exemplo 1: <u>texto inserido com tag U.</u> Exemplo 2: <ins>texto inserido com tag INS.</ins></p> 
+   <h2>Texto sobrescrito</h2>
+   <p>Para texto sobrescrito, ou seja, com caractere acima de outro caractere, usamos a tag SUP. OBS: a tag deve ser usada apenas entre o caractere a ser elevado. Exemplo: x<sup>2</sup>+3</p>
+   <h2>Texto subscrito</h2>
+   <p>Para texto subscrito, ou seja, com caractere abaixo de outro caractere, usamos a tag SUB. OBS: a tag deve ser usada apenas entre o caractere a ser elevado. Exemplo: H<sub>2</sub>O.</p>
+</body>
+</html>

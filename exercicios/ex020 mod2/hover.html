@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: rgb(236, 236, 127);
+            width: 400px;
+        }
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo e veja o efeito da pseudo-classe hover.</p>
+    <div>Passe o mouse aqui
+        <p>Esse efeito só foi possível usando a pseudo-classe hover (:), e também um seletor child (>) que fez aparecer este conteúdo que estava oculto.</p>
+    </div>
+</body>
+</html>

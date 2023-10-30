@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Personalizados</title>
+    <style>
+        
+        .especial2:hover{
+            font-weight: bold;
+        }       
+        .especial:hover{
+            font-weight: bold;
+            color: rgb(165, 42, 165);
+        }
+        .especial:hover::before{
+            
+            color:rgb(165, 42, 165);
+            content: '>>';
+                    
+        }
+        a{
+            color: red;
+            font-style: italic;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" class="especial">Repositório GitHub Gustavo Guanabara</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" id="link2" class="especial2">Youtube</a></li>
+    </ul>
+    
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas Html</title>
+</head>
+<body>
+    <h1>Listas HTML</h1>
+    <p>O HTML tem suporte para 3 tipos de listas. São elas: <ol type="I"><li>Listas Ordenadas</li><li> Listas Não Ordenadas</li><li> Listas de Definição</li></ol> </p>
+    <h2>Listas Ordenadas</h2>
+    <p>PAra criar listas ordenadas, sequenciadas, por exemplo 1, 2, 3..., usamos a tag OL (ordered list),  e dentro dela usamos a tag LI para criar os itens. <br>Existe dentro da tag OL um parâmetro de escolha entre numeração, letra maiúscula, minúscula, algarismo romano maiúsculo e minúsculo: 1, A, a, XI, xi. Para usar este parâmetro  adicionamos TYPE "" à tag OL, e dentro das aspas escolhemos a opção desejada. <br>DICA: Caso queira iniciar a lista com um número ou letra que não seja inicial padrão (1 ou A), adicionamos START "" após a tag TYPE"", e dentro das aspas inserimos o elemento que irá iniciar a lista. <br>Exemplo: <ol type="1" start="5">
+        <li>Arroz
+            <li>Feijão</li>
+            <li>Frango</li>
+        </li>
+    </ol>
+    OBS: O fechamento da tag OL é obrigatório (/OL). Já a tag LI não é obrigatório. </p>
+    <h2>Listas Não Ordenadas</h2>
+    <p>São listas em que não tem uma sequência obrigatória. Usa-se elementos como circulo pintado (disc), circulo contornado (circle) e quadrado (square). <br>O elemento disc é o padrão. <br>Para criar listas não ordenadas usamos a tag UL (unordered list), e para escolher o parâmetro adicionamos TYPE"" para selecionar entre disc, circel ou square. <br>Exemplo com square: <ul type="square"><li>Arroz</li> <li>Feijão</li><li>Frango</li></ul></p>
+    <h2>Juntando Listas</h2>
+    <p>Para juntar uma lista com outra, por exemplo: uma lista não ordenada dentro de uma lista ordenada, usamos a tag dentro de outra tag (exemplo: UL dentro da tag OL). Esse recurso de juntar listas é muito utilizado em menus e índices.
+    <p>DICA  DE ATALHO: Para alterarmos várias tags ao mesmo tempo, clicamos e seguramos a tecla ALT, selecionamos todas as tags que serão alteradas, digitamos a tag correta e damos ENTER. Todas as tags serão alteradas juntas.</p> </p> 
+    <h2>Listas de Definição</h2>
+    <p>A lista de definição é menos utilizada do que as outras. Porém é muito importante para os mecanismos de busca, que priorizam as páginas com definição de listas para entregar ao usuário o melhor resultado/resposta.
+        A lsta de definição é como um dicionário: usamos um termo e sua definição.
+        Exemplo:<dl>
+            <dt>HTML (termo)</dt>
+            <dd>Linguagem de marcação para a criação do conteúdo de um site. (definição)</dd>
+        </dl>
+        <br>Para criarmos uma lista de definição usamos a tag DL (definition list), e para incluírmos o termo com definição usamos as tags DT (definition term) e DD (definition description) respectivamente.</br> <p>Como no exemplo acima, os termos sempre ficam à esquerda e as descrições ficam deslocadas à direita.</p>
+    </p> 
+</body>
+</html>

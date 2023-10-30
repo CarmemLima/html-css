@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Links e Âncoras em HTML5</h1>
+    <h2>Usando links externos</h2>
+    <p>O fundamento básico do http e do html são os links.</p>
+    <p>Geralmente, e quase sempre, há um link dentro da página que está acessando. Os links são pontos clicáveis, que também são chamados de âncora ou hiperlink. Todo hiperlink é construído através de uma âncora dentro do código html.</p>
+    <br>CURIOSIDADE: O Google é o maior buscador de sites; e o segundo maior é o Youtube, que também é da Google.
+    <br><p>Para criarmos links externos (links que levam para outra página) dentro de uma página, usamos a tag A HREF"". A de âncora, HREF de referência de hiperlink.</p>
+    <p>Dentro das aspas de HREF inserimos a URL da página que queremos abrir ao clicar.</p>
+    <br>IMPORTANTE: Para links externos (de outras páginas da web) é sempre recomendado que se use, após a tag A HREF"", a tag de parâmetro TARGET"" e REL"". Dentro de TARGET"" usamos o parâmetro _BLANK, que significa uma página em branco, ou seja, o link será aberto em uma nova aba e não na mesma página que está acessando. Dessa forma a sua página se manterá visível e aberta para o usuário retornar.
+    Já na tag REL"", que quer dizer relativo à, usamos o parâmetro EXTERNAL, que significa externo, ou seja, que o link inserido é um link externo à sua página.
+    Esses parâmetros são recomendados para que sua página esteja sempre aberta mesmo após visitar outros links externos.</p>
+    <p>Exemplo de link externo: <br>"Visite o meu site de moda fitness acessando <a href="https://vitrineclfitness.kyte.site/" hreflang="pt-br" !--hreflang usamos para indicar o principal idioma do link externo--! target="_blank" rel="EXTERNAL">Vitrine CL Fitness"</a>.
+    </p>
+    <h2>Usando links internos</h2>
+    <p>Esta é a minha primeira página do site. Se você quiser pode acessar a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p>
+    <p>Você também pode acessar a minha <a href="notícias/pag003.html" target="_self">página de notícias</a></p>
+    <h1>Links para download</h1>
+    <p>Para criarmos um link para fazer download também usamos a tag A HREF"", mas, para inserirmos o link entre as aspas, o arquivo deve estar já salvo na pasta da página.</p> <p>Também usamos um parâmetro dentro da tag AHREF"" que é o parâmetro DOWNLOAD. Dentro dele inserimos o arquivo a ser baixado. E também tem o parâmetro TYPE. Nesse parâmetro devemos utilzar as aplicações de tipos de midia, ou media types. Para isso devemos consultar no site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" type="EXTERNAL">iana.org/mediatypes</a> qual a aplicação adequada para cada tipo de arquivo (pdf, zip, imagem, etc.)</p>
+    <p>Exemplo de link download foto e zip:
+        <ul>
+            <li><a href="download/20220907_164311-removebg-preview.png" download="20220907_164311-removebg-preview" type="imagem/png">Clique aqui para baixar a foto</a></li>
+            <li><a href="download/20220907_164311-removebg-preview.zip.zip">Clique aqui para baixar o arquivo zip</a></li>
+            <p></p>
+            <br>OBS: Em alguns navegadores o comando download do arquivo original não é atendido automaticamente (é o caso do Google, que não está baixando, só está abrindo na mesma guia). Nesse caso é necessario clicar com o botão direito sobre o link e clicar em baixar manualmente. Já no caso do arquivo zip ele já baixa automaticamente com um clique.
+        </ul>
+    </p>
+</body>
+</html>
