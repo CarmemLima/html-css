@@ -36,7 +36,10 @@ body{
 }
 header{
     background-image: linear-gradient(to bottom, var(--cor01), var(--cor04));
+    min-height: 150px;
+    text-align: center;
     padding-top: 30px;
+    
 }
 
 header > h1{
@@ -199,6 +202,7 @@ aside ul{
 
 footer{
     background-color: var(--cor01);
+    margin: auto;
     color: white;
     text-align: center;
     font-size: 0.8em;
