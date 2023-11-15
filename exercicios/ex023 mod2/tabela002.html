@@ -11,6 +11,14 @@
             
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -26,6 +34,15 @@
             text-align: right;
 
         }
+
+        tbody > tr:nth-child(even)/* EVEN OU 2N para as celulas pares com alternancia de 1 em 1*/
+        {
+            background-color: lightgreen;
+        }
+        tbody > tr:nth-child(odd) /* ODD OU 2N-1 para as celulas impares com alternancia de 1 em 1*/
+        {
+            background-color: rgba(255, 160, 122, 0.567);
+        }
         
 
     </style>
@@ -34,6 +51,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -43,10 +61,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
 
         <tbody>
@@ -189,7 +208,7 @@
 
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total da População</th>
                 <td class="num"><strong>203.062.512</strong></td>
             </tr>
 
