@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{            
+            border-collapse: collapse;
+            width: 500px;
+
+        }
+
+        caption{
+            font-weight: bolder;
+            font-size: 2em;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.cnome{
+            background-color: lightpink;
+        }
+
+        col.cidade{
+            background-color: lightslategrey;
+        }
+
+        col.csexo{
+            background-color: lightsalmon;
+        }
+
+        col.cprof{
+            background-color: lightcyan;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <caption>Cadastro</caption>
+        <colgroup>
+        <col class="cnome">
+        <col class="cidade">
+        <col class="csexo">
+        <col class="cprof">
+        </colgroup>
+
+        <tr>
+            <th class="cnome">Nome</th>
+            <th class="cidade">Idade</th>
+            <th class="csexo">Sexo</th>
+            <th class="cprof">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Carlos</td>
+            <td>32</td>
+            <td>M</td>
+            <td>Engenheiro</td>
+        </tr>
+
+        <tr>
+            <td>Lucas</td>
+            <td>22</td>
+            <td>M</td>
+            <td>Entregador</td>
+        </tr>
+
+        <tr>
+            <td>Suzie</td>
+            <td>35</td>
+            <td>F</td>
+            <td>Atendente</td>
+        </tr>
+
+        <tr>
+            <td>Carmem</td>
+            <td>34</td>
+            <td>F</td>
+            <td>Programadora FullStack</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
