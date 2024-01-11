@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quasi exercitationem doloribus. Vel, vero modi dicta perferendis reprehenderit qui consequatur ipsum porro numquam facilis voluptatibus cumque vitae fugiat at voluptates?</p>
+
+    <iframe src="paginas-extras/pag004.html" sandbox="sandbox" > Seu  navegador não é compatível</iframe>
+
+    <!--outros sites podem usar o seu site para capturar informaçoes do seus usuarios. portanto é necessário deixar o iframe seguro.
+    para bloquearmos potenciais açoes maliciosas usamos o parametro sandbox com valor "sandbox", dentro da tag iframe. isso bloqueia todo e qualquer acesso que outros sites tentem fazer. e para deixar ainda mais seguro usamos o parametro referrerpolicy com valor "no-referrer", dessa forma o conteudo que esta carregado dentro do iframe nao vai permitir que seja coletado dados do usuario. mas caso queira deixar a interação ativa para o seu proprio site, por exemplo em caso de preenchimento de formularios, podemos deixar o sanbox com valores como: allow-same-origin e/ou allow-forms e/ou allow-script. é recomendado usar os dois parametros, sandbox e referrerpolicy-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt natus excepturi veniam tempora cum. Consectetur, veritatis numquam? Error iusto tempore fugiat inventore adipisci eius saepe obcaecati voluptatibus! Reiciendis, perspiciatis sed?</p>
+</body>
+</html>
