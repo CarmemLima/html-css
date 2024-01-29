@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com COLOR, RANGE e FILE</title>
+</head>
+<body>
+<h1>Preencha o formulário abaixo:</h1>
+
+<form action="cadastro.php" method="post">
+    <p>
+        <label for="icor">Escolha uma cor:</label>
+        <input type="color" name="cor" id="icor" value="#FFFFFF">
+    </p>
+
+    <p>
+        <label for="inivel">Nível de Satisfação:</label>
+        <input type="range" name="nivel" id="inivel" min="1" max="5" value="1"> <!--O value permite que seja iniciado a partir da posição desejada de acordo com o número inserido; O min e o max são para definir de quanto em quanto o cursor irá se arrastar na escala. Usando min 1 e max 5, o cursor irá se movimentar de 20% em 20%.  -->
+    </p>
+
+    <p>
+        <label for="ifoto">Foto de perfil:</label>
+        <input type="file" name="foto" id="ifoto" >
+    </p>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+
+</form>
+    
+</body>
+</html>
