@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário com select, datalist e textarea</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+                <option value="#" selected>---Escolha uma opção---</option> <!--Aqui usei o selected para a descriçao que inseri, e que quero que fique visível na caixinha.-->
+
+                
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="ilista">Profissão: </label>
+            <input type="text" name="listadeprof" id="ilista" list="lista"> <!--O list na tag input junto ao id da tag datalist são os que permitem que a lista de opções apareça.-->
+
+            <datalist id="lista"> <!--o id do datalist precisa ser diferente do id input.-->
+                
+                <option value="Vendedor"></option>
+                <option value="Administrador"></option>
+                <option value="Professor"></option>
+                <option value="Desenvolvedor"></option>
+                <!--No value de option é necessário digitar a opçãp que quer que apareça na lista. Já no espaço entre as tags de abertura e fechmento poderá ficar vazio, pois caso digite algo irá apareceer as duas informações na lista de sugestões.-->
+
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imens">Mensagem: </label> <br>
+            <!--Em textarea não é necessário o input pra caixa de texto, pois o próprio elemento textarea já possui a sua caixa de texto-->
+            <textarea name="cxmens" id="icxmens" cols="30" rows="10"></textarea><!--o numero de rows informado não é o numero máximo de linhas que poderá ser digitado, e sim o numero maximo de linhas para determinar o tamanho da caixa que ficará visível. Caso o usuario digite mais lihas que o que esta sendo informado no valor de rows, irá aparecer uma barra de rolagem.-->
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+    
+</body>
+</html>
