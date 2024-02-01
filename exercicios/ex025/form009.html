@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário (resultado de uma informação)</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="iano">Em aque ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1950" max="2024" required oninput="calcIdade()"> <!--o que foi digitado a partir de oninput já faz parte da linguagem de programação JavaScript-->
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output name="idade" id="iidade"></output></output>
+        </p>
+
+        <!--Output serve apenas para dar o resultado de uma soma ou de uma ação do usuário para que fique visível na tela. Os dados de output não são enviados como resultado para o banco de dados, pois será enviado o que ele inseriu em input.-->
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+
+    </form>
+
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) -  Number(iano.value)
+        }
+    </script>
+    <!---a tag script é específica da linguagem JavaScript.-->
+    
+
+</body>
+</html>
