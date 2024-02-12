@@ -1,3 +1,79 @@
 @charset "UTF-8";
 
 /*Todas as demais mídias*/
+
+/*Typical Device Brekpoints (de acordo com o W3C)
+---------------------------
+Telas pequenas (telefones, 600px para baixo): até 600px;
+Outros dispositivos (tablets no modo retrato, e celulares mais largos, 600px para cima): mínimo 600px;
+Telas medianas (tablets no modo paisagem): mínimo 768px;
+Telas larga (notebooks, desktops): mínimo 992px;
+Telas extra largas (desktops, notebooks com telas largas): mínimo 1200px.
+*/
+
+@media print {/*IMPRESSÃO*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+   
+        /*Não é necessário colocar body se for para impressão, pois não irá aparecer.*/
+    
+
+    main{
+        border: 2px solid black;
+        width: 90vw;
+        
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main:after{
+        content: "Essa impressão foi feita através do site www.vcl.com.br";
+        text-decoration: overline;
+       
+    }
+
+}
+
+/*media query para celulares e telas menores não é necessario criar aqui, pois já tem um arquivo css separado so com as configurações de telas menores.*/
+
+@media screen and (min-width: 600px) and (max-width: 768px) {/*TABLETS*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+        img#phone{display: none; }
+        img#tablet{display: block; margin: auto;}
+        img#print{display: none;}
+        img#pc{display: none;}
+        img#tv{display: none;}
+    }
+    
+
+
+@media screen and (min-width: 769px ) and (max-width: 992px ) {/*DESKTOPS*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+        img#phone{display: none; }
+        img#tablet{display: none; }
+        img#print{display: none;}
+        img#pc{display: block; margin: auto;}
+        img#tv{display: none;}
+    
+    
+}
+
+@media screen and (min-width: 993px ) and (max-width: 1800px) {/*TELAS GRANDES*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+        img#phone{display: none; }
+        img#tablet{display: none; }
+        img#print{display: none;}
+        img#pc{display: none; }
+        img#tv{display: block; margin: auto;}            
+}
