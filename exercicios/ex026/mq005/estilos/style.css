@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/*CSS Mobile First*/
+
 body, html{
     background-color: lightgray;
 }

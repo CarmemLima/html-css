@@ -6,8 +6,9 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /><!--essa linha da tag desse primeiro link de css foi copiada do site do google icons-->
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="media-query/style.css">
 </head>
-<body>
+<body function onresize= "mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu_open </span> <!--essa linha da tag span foi copiada do site do google icons. no entanto esse elemento do final (onclick=clickMenu) é um complemento para que possa ser usada a tag do javascript-->
@@ -42,7 +43,18 @@
             else {
                 itens.style.display = 'block'
             }    
+        }    
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        
         }
-    </script>
+    </script><!--Essa tag é referente ao Java Script-->
+    <!--A function clickmenu é para ajustar o menu hamburguer em dispositivos de telas menores. A function mudouTamanho é para ajustar o menu sem icone hamburguer em telas maiores.-->
 </body>
 </html>

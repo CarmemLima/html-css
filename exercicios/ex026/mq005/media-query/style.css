@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*CSS para telas maiores (a partir de 768px - tablets acima)*/
+
+/*Typical Device Brekpoints (de acordo com o W3C)
+---------------------------
+Telas pequenas (telefones, 600px para baixo): até 600px;
+Outros dispositivos (tablets no modo retrato, e celulares mais largos, 600px para cima): mínimo 600px até 768px;
+Telas medianas (tablets no modo paisagem): mínimo 768px até 992px;
+Telas larga (notebooks, desktops): mínimo 992px até 1200px;
+Telas extra largas (desktops, notebooks com telas largas): mínimo 1200px acima.
+*/
+
+@media screen and (min-width: 768px) {
+    span#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main{
+        max-width: 768px;
+    }
+}
